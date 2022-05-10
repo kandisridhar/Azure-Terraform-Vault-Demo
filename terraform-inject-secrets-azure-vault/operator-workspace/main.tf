@@ -25,8 +25,8 @@ data "vault_azure_access_credentials" "creds" {
 }
 
 provider "azurerm" {
-  subscription_id         = "e306c6bc-988a-4bc0-8bd7-9c88a95ec882"
-  tenant_id               = "e521ac68-af0c-448a-a78c-8f88bffba94a"
+  subscription_id         = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+  tenant_id               = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 
   client_id     = data.vault_azure_access_credentials.creds.client_id
   client_secret = data.vault_azure_access_credentials.creds.client_secret
